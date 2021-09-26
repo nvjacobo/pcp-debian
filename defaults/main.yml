@@ -1,0 +1,9 @@
+---
+# vars file for pcp
+pcp_packages:
+  - redis
+  - pcp-zeroconf
+
+pcp_apt_repository: deb https://performancecopilot.jfrog.io/artifactory/pcp-deb-release bullseye main
+pcp_apt_gpg_key: https://pcp.io/GPG-KEY-PCP
+pcp_apt_ignore_key_error: true

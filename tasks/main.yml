@@ -1,0 +1,22 @@
+---
+# tasks file for pcp
+#
+#
+
+- name: Add pcp apt key.
+  apt_key:
+    url: "{{ pcp_apt_gpg_key }}"
+    state: present
+  register: add_repository_key
+  ignore_errors: "{{ pcp_apt_ignore_key_error }}"
+
+- name: Add pcp repository.
+  apt_repository:
+    repo: "{{ pcp_apt_repository }}"
+    state: present
+    update_cache: true
+
+- name: Install required software
+  package:
+    name: "{{ pcp_packages }}"
+    state: present
