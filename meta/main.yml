@@ -1,6 +1,6 @@
 galaxy_info:
   author: Jacobo Nájera
-  description: Performance Co-Pilot for Debian 
+  description: Performance Co-Pilot for Debian
   company: your company (optional)
 
   # If the issue tracker for your role is not on github, uncomment the
@@ -27,7 +27,7 @@ galaxy_info:
   # To view available platforms and versions (or releases), visit:
   # https://galaxy.ansible.com/api/v1/platforms/
   #
-   platforms:
+  platforms:
    - name: Debian
      versions:
   #   - all
